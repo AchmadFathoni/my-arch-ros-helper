@@ -1,0 +1,3 @@
+1. run python ./show_outdate.py
+2. Copy the result
+3. Paste to python ./rosaur.py update {here}
