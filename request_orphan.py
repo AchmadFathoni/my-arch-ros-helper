@@ -32,4 +32,4 @@ for line in f.readlines():
     payload['do_FileRequest'] = "Submit Request"
     p = s.post(PREFIX, data=payload)
     print(package, " ", p.status_code)
-    time.sleep(5)
+    time.sleep(2)

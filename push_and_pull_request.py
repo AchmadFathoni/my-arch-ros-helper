@@ -14,7 +14,6 @@ for line in f.readlines():
     repo = Repo(path+package)
     remote = repo.remote("AchmadFathoni")
     remote.push()
-    origin = org.get_repo(package)
-    pr = origin.create_pull("Upgrade",'','master','AchmadFathoni:master')
+    # origin = org.get_repo(package)
+    # pr = origin.create_pull("Upgrade",'','master','AchmadFathoni:master')
     print("Success ", package)
-    exit

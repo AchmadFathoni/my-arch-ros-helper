@@ -1,4 +1,6 @@
- -> ros-noetic-bond-core: local (1.8.6-1) is newer than AUR (1.8.5-3)
+ -> ros-noetic-actionlib-msgs: local (1.13.1-1) is newer than AUR (1.13.0-1)
+ -> ros-noetic-actionlib-tutorials: local (0.2.0-1) is newer than AUR (0.1.12-2)
+ -> ros-noetic-bond: local (1.8.6-1) is newer than AUR (1.8.5-3) 
  -> ros-noetic-bondcpp: local (1.8.6-1) is newer than AUR (1.8.5-3)
  -> ros-noetic-bondpy: local (1.8.6-1) is newer than AUR (1.8.5-1)
  -> ros-noetic-camera-calibration: local (1.15.3-1) is newer than AUR (1.15.2-1)
