@@ -6,8 +6,9 @@ PREFIX_URL = "ssh://aur@aur.archlinux.org/"
 
 global_git = Git()
 global_git.update_environment(**os.environ)
-for line in FILE.readlines():
-    package = line.split()[1][:-1]
+for package in FILE.readline().split():
     repo = Repo(PATH+package)
-    origin = repo.remote()
-    print(package,' ', origin.push('master'))
+    repo.delete_remote('origin')
+    origin = repo.create_remote('origin', PREFIX_URL+package+".git")
+    origin.push('master')
+    print(package)
