@@ -1,12 +1,13 @@
 from git import Repo, Git
+import sys
 import os
-FILE = open("outdated_aur.txt","r")
-PATH = "/home/toni/.cache/ros-aur-helper/packages/"
+
+PATH = "/home/toni/.cache/yay/"
 PREFIX_URL = "ssh://aur@aur.archlinux.org/"
 
 global_git = Git()
 global_git.update_environment(**os.environ)
-for package in FILE.readline().split():
+for package in sys.argv[1:]:
     repo = Repo(PATH+package)
     repo.delete_remote('origin')
     origin = repo.create_remote('origin', PREFIX_URL+package+".git")

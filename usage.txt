@@ -1,3 +1,6 @@
 1. run python ./show_outdate.py
 2. Copy the result
 3. Paste to python ./rosaur.py update {here}
+4. Paste to bash ./install.sh {here}
+5. Paste to python ./push_gh.py {here}
+5. Paste to python ./push_aur.py {here}
